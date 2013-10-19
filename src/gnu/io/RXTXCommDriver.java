@@ -574,11 +574,12 @@ public class RXTXCommDriver implements CommDriver
 					if(osName.equals("Linux"))
 					{
 						String[] Temp = {
-						"ttyS", // linux Serial Ports
-						"ttySA", // for the IPAQs
-						"ttyUSB", // for USB frobs
+						"ttyS", 	// linux Serial Ports
+						"ttySA", 	// for the IPAQs
+						"ttyUSB", 	// for USB frobs
 						"rfcomm",       // bluetooth serial device
-						"ttyircomm", // linux IrCommdevices (IrDA serial emu)
+						"ttyircomm", 	// linux IrCommdevices (IrDA serial emu)
+						"ttymxc3" 	// UDOO serial communication with Arduino
 						};
 						CandidatePortPrefixes=Temp;
 					}
